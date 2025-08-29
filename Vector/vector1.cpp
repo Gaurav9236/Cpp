@@ -21,4 +21,13 @@ int main (){
 
     //3.at() Access element by index (with bound checking)
     cout << "Element at index 2: " <<  v.at(2) << endl;
-}
+
+    //4. front() and back()
+    cout << "First element: " << v.front() << endl;
+    cout << "Last element: " << v.back() << endl;
+
+    //5. insert() Insert element at specific position
+    v.insert(v.begin() + 2, 25);  //Insert 25 at index 2
+    for (int x : v) cout << x << " ";
+    cout << endl;
+    }
